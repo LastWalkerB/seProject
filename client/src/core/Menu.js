@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import checkAuthenticated from '../App';
 import setAuth from '../App';
-import logout from '../user/Product';
+//import logout from '../user/Product';
 import {itemTotal} from '../user/cartHelpers'
 
 const isActive = (history, path) => {
@@ -12,6 +12,8 @@ const isActive = (history, path) => {
         return {color: '#ffffff'}
     }
 };
+
+
 
 const Menu = ({history}) => {
     return(
@@ -75,7 +77,7 @@ const Menu = ({history}) => {
                         <Link
                             className='nav-link'
                             style={{cursor: 'pointer', color: '#ffffff'}}
-                            to = '/login'
+                            to='/login'
                             >Signout
                         </Link>
                     </li>
